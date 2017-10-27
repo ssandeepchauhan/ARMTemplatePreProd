@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "storageaccountname": {
+      "value": "pocarmsa27oct"
+    },
+    "vnetName": {
+      "value": "pocarmv333"
+    },
+    "subnet1Name": {
+      "value": "pocarmv333s1"
+    },   
+    "virtualMachineSize": {
+      "value": "Standard_DS1_v2"
+    },
+    "adminUsername": {
+      "value": "vmAdmin"
+    },
+    "adminPassword": {
+      "value": "vmPassword!123"
+    },
+    "virtualMachineName": {
+      "value": "pocarmvm333"
+    },   
+    "windowsOSVersion": {
+      "value": "2016-Datacenter"
+    },
+    "publicIPAddressName": {
+      "value": "pocarmPubIP333"
+    },
+    "ipconfig": {
+      "value": "pocarmipconfig333"
+    }  
+  } 
+}

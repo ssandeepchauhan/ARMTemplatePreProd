@@ -1,0 +1,46 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0", 
+   "parameters": {
+      "storageaccountname": {
+          "value": "pocsatst21"
+          },
+      "vnetName": {
+          "value": "pocvnettst1"
+          },
+      "subnet1Name": {
+            "value": "pocvnettst1s2"
+          },
+       "subnet2Name": {
+            "value": "pocvnettst1s3"
+          },
+      "virtualMachineSize": {
+           "value": "Standard_DS1_v2"
+       }, 
+      "adminUsername": {
+           "value": "vmAdmin"
+       },
+      "adminPassword": {
+           "value": "vmPassword!123"
+       }, 
+      "virtualMachineName": {
+           "value": "pocvn1vm2"
+       },
+      "dnsLabelPrefix": {
+           "value": "pocvn1dns2"
+       },
+      "windowsOSVersion": {
+           "value": "2016-Datacenter"
+       },
+      "publicIPAddressName": {
+           "value": "pocvn1PubIP2"
+       },
+        "ipconfig": {
+           "value": "ipconfigvn1v2"
+       }, 
+       "applicationName": {
+           "value": "POCApp"
+       }
+  }
+
+}
