@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "storageaccountname": {
-      "value": "pocarmsa111"
+      "value": "prepocarmsa30oct"
     },   
     "virtualMachineSize": {
       "value": "Standard_DS1_v2"
