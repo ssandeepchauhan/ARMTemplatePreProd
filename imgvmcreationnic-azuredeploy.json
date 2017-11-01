@@ -119,7 +119,7 @@
               "uri": "[concat('http://','wprodimage','.blob.core.windows.net/vhds/','ConvertedVHD.vhd')]"
             },
             "vhd": {
-              "uri": "[concat('http://',parameters('storageAccountName'),'.blob.core.windows.net/imgvhd/',copyindex(),'-osDisk.vhd')]"
+              "uri": "[concat('http://',parameters('storageAccountName'),'.blob.core.windows.net/imgvhd/','-osDisk.vhd')]"
             },
             "caching": "ReadWrite",
             "dataDisks": [
