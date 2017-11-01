@@ -111,23 +111,25 @@
           }
         },
         "storageProfile": {
-          "imageReference": {
-            "publisher": "MicrosoftWindowsServer",
-            "offer": "WindowsServer",
-            "sku": "[parameters('windowsOSVersion')]",
-            "version": "latest"
-          },
           "osDisk": {
-            "createOption": "FromImage"
-          },
-          "dataDisks": [
+            "osType": "Windows",
+            "name": "ConvertedVHD",
+            "createOption": "FromImage",
+            "image": {
+              "uri": "[concat('http://','wprodimage','.blob.core.windows.net/vhds/','ConvertedVHD.vhd')]"
+            },
+            "vhd": {
+              "uri": "[concat('http://',parameters('storageAccountName'),'.blob.core.windows.net/imgvhd/',copyindex(),'-osDisk.vhd')]"
+            },
+            "caching": "ReadWrite",
+            "dataDisks": [
             {
               "diskSizeGB": 1023,
               "lun": 0,
               "createOption": "Empty"
             }
           ]
-        },
+          },
         "networkProfile": {
           "networkInterfaces": [
             {
