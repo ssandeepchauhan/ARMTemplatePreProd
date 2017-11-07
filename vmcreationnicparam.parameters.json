@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "storageaccountname": {
-      "value": "prepocarmsa30oct"
+      "value": "imgprepod07112017"
     },   
     "virtualMachineSize": {
       "value": "Standard_DS1_v2"
