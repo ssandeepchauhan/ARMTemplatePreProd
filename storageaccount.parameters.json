@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0", 
    "parameters": {
       "storageaccountname": {
-          "value": "imgprepod07112017"
+          "value": "prepod17112017"
           },
        "storageAccountType": {
            "value": "Standard_GRS"
